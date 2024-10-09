@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scape.</title>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@v0.169.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.169.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <img src="assets/Violin 2.png" alt="" class="violin"> -->
+
+    <div class="background brown two"></div>
+    <main>
+      <button onclick="pause()" title="pause" class="pause">
+        <img src="assets/Pause.svg" alt="">
+      </button>
+      <h1>Scape</h1>
+      <div class="paragraphs-container">
+        <div class="paragraphs">
+          <div class="paragraph" data-focus="false" data-index="0">
+            <h2>Artist Statement</h2>
+            <p>
+              Trees grow in unpredictable ways, the wind grows them one way, and the sun another, twisting and turning towards the sky, gasping for light. Their timber is an ordered chaos, each ring symbolizing another day. Their groan their last on the harvest, the Telos, when he comes and takes them. He begins to craft them, sculpt them, scape them, vicariously changing it, removing it, yet somehow creating it. He strikes it, yet keeps the rings intact, though ages it will take, he finishes. The chaos turns to order, the twists to turns, the fear to love, the wrath to redemption, the Alpha to Omega. An instrument is made, the tree could not bend the air into sound, yet the work has created it so. The tree is gone, and a new creation has been made, able to bend the air, able to create sound, a violin has been made. The man says that it is finished. He says it is well, it is good. His work is complete, the old is gone the new has come.
+            </p>
+          </div>
+          <div class="paragraph" data-focus="false" data-index="1">
+            <h2>Concept</h2>
+            <p>
+              In this process, I had to visualize, and portray the meaning of
+              the word "Scape". The word "Scape" has several different
+              definitions, but I wanted to create my own. As a Christian, I try
+              to relate all my artworks to Christ. Thus, when defining this word
+              I want it to relate to God.
+              <br />
+              And it came to me one day, when sitting in contemplation with God.
+              And to define it, we must understand how a violin is made. A
+              Singer tree must be found, so the Violin Creator searches the
+              wilderness until he finds a tree, a Singer tree at the
+              intersection of 2 rivers.
+            </p>
+          </div>
+          <div class="paragraph" data-focus="false" data-index="2">
+            <p>
+              Each Singer tree is different, all with their own inner-carvings, caused by its growth. In order for the violin to be carved out of this, he must follow those inner-carvings, as going against them, would break the wood. He then begins to carve out the shape of a violin, making sure he stays within the limitations that is the inner-carvings. And over time through the pain, he has created the violin, fully transformed from the piece of wood it used to be. This is Scaping, turning something unrecognizable, into a piece of art, whilst following its inner-carvings.
+            </p>
+          </div>
+          <div class="paragraph" data-focus="false" data-index="3">
+            <p>
+              And this process of Scaping, God is doing with everyone, we are all being grown into a full tree, and then Christ, on that Day will transform everyone, into a beautiful piece of art, he will Scape us into the image of himself, yet still following the scars we have, the marks, the carvings. And in this life, Christ has already Scaped some, transforming Him to be in his image, sanctifying them, and later, everyone will be Fully Scaped, and be Righteous, without blemish. 
+            </p>
+          </div>
+          <div class="paragraph" data-focus="false" data-index="4">
+            <p>
+              And this half-scaped violin, is us, Christ has begun to work in our life's, and is in the process of Scaping us. Out of a ragged piece of wood, and he will produce a work of art. He may only be half done now, but it will be finished, and has been finished, on the Cross.
+
+              "It is finished." (John 19:30)
+              <br>
+            </p>
+          </div>
+          <div class="paragraph" data-focus="false" data-index="5">
+            <h2>Process</h2>
+            <p>
+              The violin is a 3d model, and was designed in blender. I used top and side views of a violin for references images to create the violin. And I use the sculpting tools in blender to create the block that the violin is being carved out of.
+              <br>
+              I have always been obsessed with old, vintage styles, especially 1700s style writing, on old paper. And a violin is in that 1700s style, thus, that is where I got the style of this website. Originally, I was going to have the violin looking normal, with normal brown shading etc., however, I decided to give it a hand-drawn look, like it is an engineering prototype from Leonardo DiCaprio.
+            </p>
+          </div>
+          <div class="paragraph" data-focus="false" data-index="6">
+            <p>
+              Additionally, I programmed a custom SVG Filter, to get that text-bleed effect on the text, further highlighting the vintage effect. I even figured out you could animate the values of the filter, and get the text to fade away, looking like the ink is dissolving into the paper.
+
+              All these things combined, create an extremely immersive and visually appealing experience, that displays the artwork.
+              <br>
+            </p>
+          </div>
+          <div class="paragraph" data-focus="false" data-index="7">
+            <h2>Impact</h2>
+            <p>
+              Take this artwork, and if you have ears let them hear, and if you have eyes let them see, that this is what Christ is doing to you, relentlessly Scaping you, and not only you, but the whole world. Open your eyes and see, that this is the Judgement, that he will burn away the dross and tin in all lives, and make all anew (Rev. 21:5). God, the creator will finally fully create everyone, Scape everyone, and he will then finally be "All in all" (1 Cor. 15:28), the sixth day will finally be over, and he can finally lay back on the sabbath and say "It is Good" (Genesis 2:1-3), and "It is finished" (John 19:30).
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="violin"></div> -->
+    </main>
+    <canvas id="canvas"></canvas>
+
+    <div class="triggers">
+      <div class="trigger" data-index="0"></div>
+      <div class="trigger" data-index="1"></div>
+      <div class="trigger" data-index="2"></div>
+      <div class="trigger" data-index="3"></div>
+      <div class="trigger" data-index="4"></div>
+    </div>
+
+    <div class="background brown one"></div>
+    <div class="background paper one"></div>
+    <div class="background paper two"></div>
+    <div class="background paper burned"></div>
+
+    <!-- SVG filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">
+      <defs>
+        <filter id="title">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.1"
+            numOctaves="10"
+          />
+          <feDisplacementMap in="SourceGraphic" scale="6" />
+        </filter>
+      </defs>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">
+      <defs>
+        <filter id="violin">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency=".08"
+            numOctaves="10"
+          />
+          <feDisplacementMap in="SourceGraphic" scale="8" />
+        </filter>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">
+      <defs>
+        <filter id="button">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency=".08"
+            numOctaves="10"
+          />
+          <feDisplacementMap in="SourceGraphic" scale="4" />
+        </filter>
+      </defs>
+    </svg>
+    <script src="main.js" type="module"></script>
+    <script src="3d.js" type="module"></script>
+  </body>
+</html>
