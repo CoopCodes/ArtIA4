@@ -69,7 +69,7 @@ const GltfLoader = new GLTFLoader();
 // Load a glTF resource
 GltfLoader.load(
   // resource URL
-  "assets/Violin.glb",
+  "public/Violin.glb",
   // called when the resource is loaded
   function (gltf) {
     violin = gltf.scene;
