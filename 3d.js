@@ -62,6 +62,47 @@ controls.enableZoom = false;
 
 // ** Loading Violin ** //
 
+function loaded() {
+  $('#all > feDisplacementMap').css('scale', $('#all > feDisplacementMap').attr('scale')).animate({
+    scale: 8
+  }, {
+    duration: 3000,
+    step: function(now, fx) {
+      $(fx.elem).attr('scale', now);
+    },
+  });
+
+  $('main, #canvas').animate({
+    opacity: 1,
+  }, {
+    duration: 3000,
+    complete: function() {
+      $('#canvas').css('filter', 'url(#violin)');
+      $('#all').remove();
+    }
+  });
+
+  // $('#all > feTurbulence').css('top', $('#all > feTurbulence').attr('baseFrequency')).animate({
+  //   top: 0
+  // }, {
+  //   duration: 100,
+  //   step: function(now, fx) {
+  //     $(fx.elem).attr('baseFrequency', now);
+  //   },
+  // });
+
+  // gsap.timeline().to("#all > feDisplacementMap", {
+  //   attr: { scale: 0 },
+  //   duration: 3,
+  //   ease: "power1.inOut"
+  // }).to("main, #canvas", {
+  //   opacity: 1,
+  //   duration: 3,
+  //   ease: "power1.inOut"
+  // });
+
+}
+
 let violin;
 
 const GltfLoader = new GLTFLoader();
@@ -75,6 +116,8 @@ GltfLoader.load(
     violin = gltf.scene;
 
     scene.add(violin);
+
+    loaded()
 
     gltf.animations; // Array<THREE.AnimationClip>
     gltf.scene; // THREE.Group
