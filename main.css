@@ -33,33 +33,33 @@ body {
 }
 
 .background.paper.burned {
-  background-image: url("/assets/Burned\ Paper.jpg");
+  background-image: url("public/assets/Burned\ Paper.jpg");
   mix-blend-mode: hard-light;
   opacity: .5;
 }
 
 /* Paper */
 .background.paper.one {
-  background-image: url("/assets/27\ Paper\ Bleed\ Car.jpg");
+  background-image: url("public/assets/27\ Paper\ Bleed\ Car.jpg");
   mix-blend-mode: hard-light;
 }
 
 /* Paper 2 */
 .background.paper.two {
-  background-image: url("/assets/27\ Paper\ Bleed\ Car.jpg");
+  background-image: url("public/assets/27\ Paper\ Bleed\ Car.jpg");
   opacity: .2;
 }
 
 /* Brown */
 .background.brown.one {
-  background-image: url("/assets/01\ Brown.jpg");
+  background-image: url("public/assets/01\ Brown.jpg");
   mix-blend-mode: soft-light;
 
   opacity: .2;
 }
 
 .background.brown.two {
-  background-image: url("/assets/01\ Brown.jpg");
+  background-image: url("public/assets/01\ Brown.jpg");
   mix-blend-mode: lighten;
   
   z-index: 5 !important;
@@ -122,7 +122,7 @@ main .paragraph h2 {
 }
 
 .violin {
-  /* background-image: url('/assets/Violin\ 1.png'); */
+  /* background-image: url('public/assets/Violin\ 1.png'); */
 
   position: fixed;
   bottom: 0;
