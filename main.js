@@ -21,7 +21,7 @@ $(document).on('touchstart click', function() {
     return;
   }
 
-  audio = new Audio('public/assets/Now I Let It Go.mp3');
+  audio = new Audio('/assets/Now I Let It Go.mp3');
   audio.loop = true;
   audio.volume = 0.3;
   audio.play();
@@ -32,11 +32,11 @@ function pause() {
     if (paused) {
       paused = false;
       audio.play();
-      $('.pause').html('<img src="public/assets/Pause.svg" alt="">');
+      $('.pause').html('<img src="/assets/Pause.svg" alt="">');
     } else {
       paused = true;
       audio.pause();
-      $('.pause').html('<img src="public/assets/Play.svg" alt="">');
+      $('.pause').html('<img src="/assets/Play.svg" alt="">');
     }
   }
 }
@@ -65,7 +65,7 @@ $(document).ready(function() {
     let newSVG = $(`<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">`);
     $(this).prepend(newSVG);
 
-    newSVG.load(`public/assets/paragraphFilter.svg`, function() {
+    newSVG.load(`/assets/paragraphFilter.svg`, function() {
       const feDisplacementMap = $($($(this).children()[0]).children('filter')[0])
 
       feDisplacementMap.attr('id', `paragraphFilter${counter}`);
